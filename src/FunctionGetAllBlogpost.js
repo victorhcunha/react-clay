@@ -9,8 +9,8 @@ export default function FunctionGetAllBlogpost(){
 
     return (
     <>
-        <ClayTable>
         <h1>GET Blogposts</h1>
+        <ClayTable>
 
         <ClayTable.Head>
             <ClayTable.Row>
@@ -31,6 +31,7 @@ export default function FunctionGetAllBlogpost(){
                 ))
             : ""}
         </ClayTable.Body>
+        
         </ClayTable>
     </>
     );

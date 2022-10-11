@@ -7,6 +7,7 @@ import FunctionDeleteBlogpost from "./FunctionDeleteBlogpost";
 function App() {
   return (
     <>
+      <hr />
       <FunctionGetAllBlogpost />
       <hr />
       <FunctionPostBlogpost />
