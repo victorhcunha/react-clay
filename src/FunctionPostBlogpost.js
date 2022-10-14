@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ClayForm, { ClayInput } from "@clayui/form";
 import ClayButton from "@clayui/button";
-import { postSiteBlogPost } from "./RequestFunctions";
+import { postSiteBlogPost } from "./RequestFunctionsBlogpost";
 
 export default function FunctionPostBlogpost() {
   const [headline, setHeadline] = useState("");
@@ -17,7 +17,7 @@ export default function FunctionPostBlogpost() {
   return (
     <>
       <ClayForm>
-        <h1>POST SiteBlogpost</h1>
+        <h1>POST Site Blogpost</h1>
 
         <ClayForm.Group className="form-group-sm">
           <label htmlFor="basicInputText">Headline</label>

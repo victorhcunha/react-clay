@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ClayForm, { ClayInput } from "@clayui/form";
 import ClayButton from "@clayui/button";
-import { deleteBlogPost } from "./RequestFunctions";
+import { deleteBlogPost } from "./RequestFunctionsBlogpost";
 
 export default function FunctionDeleteBlogpost() {
 const [id, setId] = useState("");
@@ -20,7 +20,7 @@ return (
         <ClayForm.Group className="form-group-sm">
         <label htmlFor="basicInputText">Id</label>
         <ClayInput
-            id="headline"
+            id="id"
             placeholder="Insert the id here"
             type="text"
             value={id}

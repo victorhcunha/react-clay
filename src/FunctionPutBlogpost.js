@@ -1,4 +1,4 @@
-import { putBlogPost } from "./RequestFunctions";
+import { putBlogPost } from "./RequestFunctionsBlogpost";
 import ClayForm, { ClayInput } from "@clayui/form";
 import ClayButton from "@clayui/button";
 import React, { useState } from "react";
@@ -24,7 +24,7 @@ export default function FunctionPutBlogpost() {
             <ClayForm.Group className="form-group-sm">
             <label htmlFor="basicInputText">Id</label>
             <ClayInput
-                id="headline"
+                id="id"
                 placeholder="Insert the id here"
                 type="text"
                 value={id}
