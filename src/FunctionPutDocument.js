@@ -8,7 +8,7 @@ const [id, setId] = useState("");
 
 function onClickUpdate() {
     putDocument(id).then(() => {
-    setId("");
+      setId("");
     });
 }
 

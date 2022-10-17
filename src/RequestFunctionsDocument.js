@@ -27,18 +27,18 @@ function postSiteDocument() {
 
 //put
 function putDocument(id) {
-  const file = document.getElementById("basicInputFileDoc").files[0];
+  const file = document.getElementById("basicInputDoc");
   const data = new FormData();
-  data.append("file", file);
+  data.append("file", file.files[0]);
 
   console.log(file);
   console.log(data);
 
   return Liferay.Util.fetch(
-    `http://localhost:8080/o/headless-delivery/v1.0/sites/${id}/documents`,
+    `http://localhost:8080/o/headless-delivery/v1.0/documents/${id}`,
 
     {
-      method: "PATCH",
+      method: "PUT",
       body: data,
     }
   ).then((response) => response.json());
@@ -70,5 +70,10 @@ function deleteDocument(id) {
   ).then((response) => response.json());
 }
 
-export { getSiteDocument, postSiteDocument, putDocument, deleteDocument };
+export {
+  getSiteDocument,
+  postSiteDocument,
+  putDocument,
+  deleteDocument,
+};
 
