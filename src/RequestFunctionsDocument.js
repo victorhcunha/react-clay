@@ -44,22 +44,6 @@ function putDocument(id) {
   ).then((response) => response.json());
 }
 
-const docUPDATE = (id) => {
-  const doc = document.querySelector('input[type="file"]');
-  const data = new FormData();
-  data.append("file", doc.files[0]);
-
-  return Liferay.Util.fetch(
-    `http://localhost:8080/o/headless-delivery/v1.0/sites/${id}/documents`,
-    { 
-      body: data,
-      method: "PATCH",
-    }
-  );
-};
-
-
-
 //delete
 function deleteDocument(id) {
   return Liferay.Util.fetch(
