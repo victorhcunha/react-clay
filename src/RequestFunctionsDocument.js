@@ -50,7 +50,7 @@ function deleteDocument(id) {
     `http://localhost:8080/o/headless-delivery/v1.0/documents/${id}`,
     {
       method: "DELETE",
-    }
+    } 
   ).then((response) => response.json());
 }
 
